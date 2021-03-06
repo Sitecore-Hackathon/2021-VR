@@ -15,6 +15,10 @@ using Microsoft.AspNetCore.Localization;
 using Sitecore.AspNet.RenderingEngine.Localization;
 using Microsoft.AspNetCore.HttpOverrides;
 using VRBYOD.Project.MLHost.Rendering.Configuration;
+using VRBYOD.Foundation.CustomVision.Rendering.Service;
+using VRBYOD.Feature.VisionComponents.Rendering.Extensions;
+using VRBYOD.Feature.SimpleText.Rendering.Extensions;
+using VRBYOD.Feature.Navigation.Rendering.Extensions;
 
 namespace VRBYOD.Project.MLHost.Rendering
 {
@@ -56,13 +60,17 @@ namespace VRBYOD.Project.MLHost.Rendering
                 .AddHttpHandler("default", Configuration.LayoutServiceUri)
                 .AsDefaultHandler();
 
+            ///Adding Custom Vistion Service
+            services.AddSingleton<ICustomVisionService, CustomVisionService>();
+
             // Register the Sitecore Rendering Engine services.
             services.AddSitecoreRenderingEngine(options =>
             {
                 //Register your components here
                 options                    
-                    //.AddFeatureNavigation()
-                    //.AddFeatureHero()
+                    .AddFeatureVisionComponents()
+                    .AddFeatureSimpleText()
+                    .AddFeatureNavigation()
                     .AddDefaultPartialView("_ComponentNotFound");
             })
                 // Includes forwarding of Scheme as X-Forwarded-Proto to the Layout Service, so that

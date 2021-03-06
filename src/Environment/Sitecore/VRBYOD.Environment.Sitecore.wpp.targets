@@ -9,6 +9,8 @@
         <SitecoreAssembliesToExclude Include="VRBYOD.Environment.Sitecore.dll" />
         <SitecoreAssembliesToExclude Include="Sitecore.LayoutService.dll" />
         <SitecoreAssembliesToExclude Include="Sitecore.LayoutService.Mvc.dll" />
+
+        <SitecoreAssembliesToInclude Include="System.Diagnostics.DiagnosticSource.dll" />
     </ItemGroup>
 
 </Project>
