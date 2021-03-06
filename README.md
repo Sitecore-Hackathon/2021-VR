@@ -1,20 +1,26 @@
 ![Hackathon Logo](docs/images/hackathon.png?raw=true "Hackathon Logo")
-# TEAM VR  : BYOD - Object Detection App
-  
 
-### ⟹ [SetupGuide](/docs/Setup-Guide.docx) <<
-### ⟹ [UsageGuide](/docs/BYOD-Application-User-Guide.docx) <<
+## Team name
+⟹ TEAM VR
 
-## Intro :
+## Category
+⟹ Best use of Headless using JSS or .NET
 
-As we are now familiar with a lot of AI tools that allow users classify & Tag images but they are mostly limited to a General Dataset - mostly realy world tags like Person, Vehicle, Animal etc. * It takes a huge effort to custom train specific images - let's say images related to a product line **( yes - we have trained to predict Apple Products.)**.
+## Description
+As we are now familiar with a lot of AI tools that allow users to classify & Tag images but they are mostly limited to a General Dataset - mostly realy world tags like Person, Vehicle, Animal etc. * It takes a huge effort to custom train specific images - let's say images related to a product line **( yes - we have trained to predict Apple Products.)**.
 #### So we took this initiative to drive a BYOD pipeline using Sitecore and Headless Service !
-
-## Value add : 
+#### Value add : 
 We think this could be of great use as the dataset is created by end users who master their product line and so they can easily build their own ! We then do the difficult part of training it. It can also be coupled with Sitecore.ai and could serve as a tagging service for Content Hub. You can think of so many different use cases !
 
-## Tools Used :
- 
+## Video link
+⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
+
+⟹ [Replace this Video link](#video-link)
+
+
+
+## Pre-requisites and Dependencies
+
  We hava a created **'Build Your Own Dataset'** for Object Detection in Images app using 
 
   - Sitecore & .net core SDK
@@ -22,22 +28,14 @@ We think this could be of great use as the dataset is created by end users who m
   - [Vott Tool (Visual Object Tagging Tool)](https://github.com/microsoft/VoTT)
   - Azure Blob Storage - To store images and vott project
 
-## A Brief Workflow :
-
-A short summary on how the whole custom data set training is done.
-
-Upload Image |Tag Image|Export|Train & Predict
-:--------------------|:--------------------|:--------------------|:--------------------
-Upload image in Custom Folder Within Sitecore  |Tag Image Using VOTT tool which is mounted as external tool and can be accessed from Launchpad|Once images are tagged - click export button that exports to CustomVision.ai|Finally goto Train page - provide a name for your model and click train. Once the model is available, Predictions can be done !
-
-## Docker Setup
+## Installation instructions
+### Docker Setup
 
 - run ./init.ps1 -LicenseXmlPath 'Provide-your-Sitecore-Path'
 - run ./Start.ps1 to build and run containers.
 - run ./Stop.ps1 to stop containers
 
-## App Setup
-
+### Configuration
 App setup is not as easy like the docker - in short you need,
 
 - Azure Blob Storage - to store and process image in VOTT tool
@@ -45,9 +43,16 @@ App setup is not as easy like the docker - in short you need,
 
 Please follow this [SetupGuide](/docs/Setup-Guide.docx) document which has clear Setup Instructions 
 
-## User Guide
+## Usage instructions
+
+A short summary on how the whole custom data set training is done.
+
+Upload Image |Tag Image|Export|Train & Predict
+:--------------------|:--------------------|:--------------------|:--------------------
+Upload image in Custom Folder Within Sitecore  |Tag Image Using VOTT tool which is mounted as external tool and can be accessed from Launchpad|Once images are tagged - click export button that exports to CustomVision.ai|Finally goto Train page - provide a name for your model and click train. Once the model is available, Predictions can be done !
 
 It is quite like the workflow table but please follow this document on how to work on it. [UsageGuide](/docs/BYOD-Application-User-Guide.docx)
+
 
 ## Reference images
 
@@ -69,7 +74,7 @@ It is quite like the workflow table but please follow this document on how to wo
 #### 6. Predict Images -- (Fun Part :D )
 ![TrainModel](/docs/images/6.Predictions.png "TrainModel")
 
-######Notes:
+## Comments
 - Custom Vision Requires at-least 15 images per tag to train
 - VOTT tool Export can throw 429 - Too many request error now and then. So we request you to click on Export as you tag images.
 - We have done a minilastic training on a small dataset because of time constraint , so multi-product image predictability is low.
