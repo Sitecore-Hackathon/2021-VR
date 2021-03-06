@@ -1,15 +1,9 @@
 ![Hackathon Logo](docs/images/hackathon.png?raw=true "Hackathon Logo")
-# Sitecore Hackathon 2021
-
-- MUST READ: **[Submission requirements](SUBMISSION_REQUIREMENTS.md)**
-- [Entry form template](ENTRYFORM.md)
-- [Starter kit instructions](STARTERKIT_INSTRUCTIONS.md)
+# TEAM VR  : BYOD - Object Detection App
   
 
-### ⟹ [Insert your documentation here](ENTRYFORM.md) <<
-
-
-# TEAM VR  : BYOD - Object Detection App
+### ⟹ [SetupGuide](ENTRYFORM.md) <<
+### ⟹ [UsageGuide](ENTRYFORM.md) <<
 
 ## Intro :
 
@@ -57,7 +51,7 @@ It is quite like the workflow table but please follow this document on how to wo
 
 ## Reference images
 
-#### 1. Upload in Training Folder
+#### 1. Upload images in Training Folder
 ![Upload in Training Folder](/docs/images/1.Upload-Image.png "Upload in Training Folder")
 
 #### 2. Open VOTT tool from LaunchPad
