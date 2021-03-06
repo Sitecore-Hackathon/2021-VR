@@ -87,6 +87,7 @@ namespace VRBYOD.Foundation.CustomVision.Rendering.Service
             //Create Prediction Api
             var predictionApi = AuthenticatePrediction(_predictionEndpoint, _predictionKey);
 
+            ///TODO: It is messy Code to write between FILE Streams !! But this is somehow we could overcome DOCKER Watcher
             using (FileStream file = new FileStream(GetTempFileLocation(), FileMode.Open, FileAccess.ReadWrite))
             {
                 imageStream.WriteTo(file);
