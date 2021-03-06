@@ -69,7 +69,7 @@ namespace VRBYOD.Project.MLHost.Rendering.Controllers
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
         [Route("TrainProject")]
-        public async Task<IActionResult> TrainProject(string publishModelName)
+        public async Task<IActionResult> TrainProject([FromForm] string publishModelName)
         {
             await Task.Run(() => _customVisionService.TrainProject(publishModelName));
             return Ok(new { Result = "Training Done!" });
@@ -95,6 +95,20 @@ namespace VRBYOD.Project.MLHost.Rendering.Controllers
             if (models == null)
                 return StatusCode(StatusCodes.Status404NotFound);
             return Ok(new { Result = models });
+
+        }
+
+        [HttpGet]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        [Route("GetCurrentTraining")]
+        public async Task<IActionResult> GetCurrentTraining()
+        {
+            var iteration = await Task.Run(() => _customVisionService.CheckIfIterationInTraining());
+            //No iteration found
+            if (iteration == null)
+                return Ok(new { Result = "" });
+            return Ok(new { Result = iteration });
 
         }
 

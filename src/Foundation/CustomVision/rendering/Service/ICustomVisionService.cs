@@ -34,5 +34,11 @@ namespace VRBYOD.Foundation.CustomVision.Rendering.Service
         /// </summary>
         /// <returns></returns>
         public List<string> GetPublishedModels();
+
+        /// <summary>
+        /// Check if Project has a training iteration
+        /// </summary>
+
+        public string CheckIfIterationInTraining();
     }
 }

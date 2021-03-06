@@ -114,7 +114,7 @@ namespace VRBYOD.Foundation.CustomVision.Rendering.Service
             var project = trainingApi.GetProject(new Guid(_projectId));
             var iterations = trainingApi.GetIterations(project.Id);
             //Get Published Name
-            return iterations?.Where(x => x.Status.ToLower() == "published" || x.Status.ToLower() == "completed")?.Select(x => x.PublishName).ToList();
+            return iterations?.Where(x => !string.IsNullOrEmpty(x.PublishName) && (x.Status.ToLower() == "published" || x.Status.ToLower() == "completed"))?.Select(x => x.PublishName).ToList();
         }
 
         /// <summary>
@@ -170,6 +170,17 @@ namespace VRBYOD.Foundation.CustomVision.Rendering.Service
 
             var imageFile = Path.Combine(directoryPath, fileName);
             return imageFile;
+        }
+
+        public string CheckIfIterationInTraining()
+        {
+            ///Create Training Api
+            var trainingApi = AuthenticateTraining(_trainerEndpoint, _trainerKey);
+            //Get Project
+            var project = trainingApi.GetProject(new Guid(_projectId));
+            var iterations = trainingApi.GetIterations(project.Id);
+            //Get Published Name
+            return iterations?.Where(x => x.Status.ToLower() == "training")?.Select(x => x.Name).FirstOrDefault();
         }
 
         #endregion

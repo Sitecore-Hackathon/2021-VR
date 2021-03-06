@@ -1,29 +1,37 @@
 ﻿
-<section class="column-container two-column-equal background-grey">
-    <div class="container">
+
+<div class="card text-center" id="predict">
+    <div class="card-header">
+        <h5 style="color:blue">Upload an image to test out !</h5>
+    </div>
+    <div class="card-body">
         <form method="post" enctype="multipart/form-data">
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-sm-12">
                     <h5 style="color:blue">Try uploading your own images:</h5>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-12">
                     <label style="color:blue" for="cars">Choose a Trained Model to predict</label>
                     <select name="modelname" id="modelname">
                     </select>
                 </div>
             </div>
             <div class="row">
-                <input type="file" name="imageFile">
-                <input type="submit" value="Upload File" name="submit" class="btn btn-primary">
+                <div class="col-sm-12">
+                    <input type="file" name="imageFile">
+                    <input type="submit" value="Upload File" name="submit" class="btn btn-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div id="resultImagediv" class="col-sm-12">
+                    <img id="result" style="height: 600px;width: auto;" />
+                </div>
             </div>
         </form>
     </div>
-    <div class="container">
-        <div class="row">
-            <div id="resultImagediv" class="col-sm-6">
-                <img id="result" style="height: 600px;
-    width: auto;" />
-            </div>
+    <div class="card-footer text-muted check-project">
+        <div class="alert alert-primary" role="alert" id="model-info">
+            Please Upload Jpg image
         </div>
     </div>
-</section>
+</div>
