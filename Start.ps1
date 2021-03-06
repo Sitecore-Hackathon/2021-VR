@@ -14,7 +14,7 @@ $PlatformName = $settings.COMPOSE_PROJECT_NAME
 # Restore dotnet tool for sitecore login and serialization
 dotnet tool restore
 
-$dockerCompose = "docker-compose -f docker-compose.yml -f docker-compose.override.yml docker-compose.core.mlhost.yml"
+$dockerCompose = "docker-compose -f docker-compose.yml -f docker-compose.override.yml -f docker-compose.core.mlhost.yml"
 
 
 # Build all containers in the Sitecore instance, forcing a pull of latest base containers
