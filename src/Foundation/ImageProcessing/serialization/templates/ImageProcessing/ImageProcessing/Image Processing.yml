@@ -2,7 +2,7 @@
 ID: "7755d774-a56d-4b83-b4f5-392ced9515f2"
 Parent: "2d6047c9-8228-4080-b1fb-b9cc9b95511a"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Foundation/VRBYOD/ImageProcessing/Image Processing
+Path: /sitecore/templates/Foundation/ImageProcessing/ImageProcessing/Image Processing
 Languages:
 - Language: en
   Versions:
