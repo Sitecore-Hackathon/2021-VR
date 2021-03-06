@@ -1,7 +1,7 @@
 ﻿---
 ID: "21a422ff-3367-492c-a2ec-b003db11e9f6"
 Parent: "de67a8ad-4c87-4ba8-9d78-fc52e5460631"
-Template: "261ab38f-b74c-40da-87a7-c55ecd781e0c"
+Template: "9a7016b1-ac3b-4716-915c-e44d38383a02"
 Path: /sitecore/content/MLHost/Home
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -13,6 +13,20 @@ SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{A5BC37E7-ED96-4C1E-8590-A26E64DB55EA}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{7E652CF2-819E-4E7D-911E-E9CAD57761C6}"
+          p:after="*[1=2]"
+          s:id="{437CCC09-AB5D-47B3-96D7-2B05BDFF5324}"
+          s:ph="footer" />
+      </d>
+    </r>
 Languages:
 - Language: en
   Versions:
@@ -21,22 +35,53 @@ Languages:
     - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
       Hint: __Lock
       Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{5736D659-E89B-4D7A-8B6E-A9358638949B}"
+              p:before="*"
+              s:ds="{CDCD47C6-A6E8-43EC-9CF8-C217A840805F}"
+              s:id="{A4F28B31-5D18-4158-92AB-F4D2ECA6D2BE}"
+              s:ph="header" />
+            <r
+              uid="{B59FEC3A-8430-41C1-A072-3A5F4F75589E}"
+              p:after="r[@uid='{5736D659-E89B-4D7A-8B6E-A9358638949B}']"
+              s:ds="{242AB349-557D-4071-BF3D-11023BB3FB32}"
+              s:id="{44955B7C-449C-4220-9A6A-79480D4691AF}"
+              s:ph="main" />
+            <r
+              uid="{6FAF8FB9-90A1-4C12-B76A-1ED1C848B615}"
+              p:after="r[@uid='{B59FEC3A-8430-41C1-A072-3A5F4F75589E}']"
+              s:id="{EBC62CE1-75BC-41E4-BF29-8787D4BD8483}"
+              s:ph="main" />
+            <r
+              uid="{E8AFB039-4AD9-4208-B560-C32A22C02181}">
+              <p:d />
+            </r>
+            <r
+              uid="{7E652CF2-819E-4E7D-911E-E9CAD57761C6}">
+              <p:d />
+            </r>
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20210125T132122Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{FCA998C5-0CC3-4F91-94D8-0A4E6CAECE88}"
-    - ID: "4a697a69-9b9b-4d8e-ad5d-b19ba631365c"
-      Hint: Title
-      Value: BYOD Image Object Detection
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b0c172d9-6b01-47ce-badf-e8e282cca4d7"
+      Value: "d4c8b16e-5403-4617-89e3-bf58599983ea"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210306T150628Z
+      Value: 20210306T171521Z

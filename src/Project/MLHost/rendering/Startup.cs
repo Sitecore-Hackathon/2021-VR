@@ -71,6 +71,7 @@ namespace VRBYOD.Project.MLHost.Rendering
                     .AddFeatureVisionComponents()
                     .AddFeatureSimpleText()
                     .AddFeatureNavigation()
+                    .AddFeatureVisionComponents()
                     .AddDefaultPartialView("_ComponentNotFound");
             })
                 // Includes forwarding of Scheme as X-Forwarded-Proto to the Layout Service, so that

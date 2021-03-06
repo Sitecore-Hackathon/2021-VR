@@ -8,7 +8,7 @@ namespace VRBYOD.Feature.SimpleText.Rendering.Extensions
     {
         public static RenderingEngineOptions AddFeatureSimpleText(this RenderingEngineOptions options)
         {
-            options.AddModelBoundView<SimpleTextModel>("SimpleText");
+            options.AddModelBoundView<RichTextContent>("RichTextContent");
 
             return options;
         }

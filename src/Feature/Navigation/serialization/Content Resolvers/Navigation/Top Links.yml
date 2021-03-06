@@ -6,7 +6,7 @@ Path: /sitecore/system/Modules/Layout Service/Rendering Contents Resolvers/Navig
 SharedFields:
 - ID: "de218ede-a9ad-4b04-86c5-9ff593ccf39d"
   Hint: Type
-  Value: Mvp.Feature.Navigation.LayoutService.TopLinksContentResolver, Mvp.Feature.Navigation
+  Value: VRBYOD.Feature.Navigation.LayoutService.TopLinksContentResolver, VRBYOD.Feature.Navigation
 Languages:
 - Language: en
   Versions:
@@ -25,11 +25,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a18ac584-3ec3-488e-a448-bdac06c35168"
+      Value: "d2d3d1e4-9bb1-4b19-b9a0-32f419e7bf2d"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20200529T005710Z
+      Value: 20210306T170710Z

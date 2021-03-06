@@ -1,0 +1,27 @@
+﻿---
+ID: "e5d7efce-c2be-4c07-be18-95a551a2eb4e"
+Parent: "cdcd47c6-a6e8-43ec-9cf8-c217a840805f"
+Template: "e4986869-e4b1-4990-8669-52abf69cd9cf"
+Path: /sitecore/content/MLHost/Shared Content/Top Links/Links/Predict
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210306T154651Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f784b473-d6ff-4511-be3c-62491ea05e1a"
+    - ID: "aff6fd57-80bd-4b53-adb9-164b922d5763"
+      Hint: Link
+      Value: |
+         <link text="Predict" linktype="anchor" url="/en/predict" anchor="/en/predict" title="Predict" class="" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210306T171403Z

@@ -1,8 +1,8 @@
 ﻿---
-ID: "6fc3053e-6380-4d2c-a5c2-4f92928eb3c2"
-Parent: "261ab38f-b74c-40da-87a7-c55ecd781e0c"
-Template: "261ab38f-b74c-40da-87a7-c55ecd781e0c"
-Path: /sitecore/templates/Project/VRBYOD/Page/__Standard Values
+ID: "18214e4b-2d75-442e-9b3b-7a7d8b7c71b0"
+Parent: "9a7016b1-ac3b-4716-915c-e44d38383a02"
+Template: "9a7016b1-ac3b-4716-915c-e44d38383a02"
+Path: /sitecore/templates/Project/VRBYOD/HomePage/__Standard Values
 SharedFields:
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
@@ -14,13 +14,13 @@ SharedFields:
         <r
           id="{437CCC09-AB5D-47B3-96D7-2B05BDFF5324}"
           ph="footer"
-          uid="{2F319765-82FD-4DE5-9D94-A41FE44FEDBC}" />
+          uid="{0A2D1293-8821-4471-A6DD-5798638BADBF}" />
         <r
           ds="{CDCD47C6-A6E8-43EC-9CF8-C217A840805F}"
           id="{A4F28B31-5D18-4158-92AB-F4D2ECA6D2BE}"
           par=""
           ph="header"
-          uid="{3310D224-A083-4DC3-AEAB-0B9B9F0F09DB}"
+          uid="{E8AFB039-4AD9-4208-B560-C32A22C02181}"
           ccb="Clear on publish" />
       </d>
     </r>
@@ -31,7 +31,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20210306T074601Z
+      Value: 20210306T155232Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -42,11 +42,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "12ceb2bc-34ee-440f-b4e2-6b04bc98285f"
+      Value: "219b2ac0-8669-419e-8f1c-2fbee5ef93c3"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210306T162119Z
+      Value: 20210306T162212Z

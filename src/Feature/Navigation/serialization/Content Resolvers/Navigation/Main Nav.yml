@@ -9,7 +9,7 @@ SharedFields:
   Value: 1
 - ID: "de218ede-a9ad-4b04-86c5-9ff593ccf39d"
   Hint: Type
-  Value: Mvp.Feature.Navigation.LayoutService.MainNavContentResolver, Mvp.Feature.Navigation
+  Value: VRBYOD.Feature.Navigation.LayoutService.MainNavContentResolver, VRBYOD.Feature.Navigation
 Languages:
 - Language: en
   Versions:
@@ -28,11 +28,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6ca552ea-f72a-41e4-ac5a-faa40bae131e"
+      Value: "e8fd07c3-23f2-4cc0-880a-2ec76a7a1fd8"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20200604T050352Z
+      Value: 20210306T170719Z

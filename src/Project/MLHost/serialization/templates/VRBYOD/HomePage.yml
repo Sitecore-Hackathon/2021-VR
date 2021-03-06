@@ -1,20 +1,20 @@
 ﻿---
-ID: "261ab38f-b74c-40da-87a7-c55ecd781e0c"
+ID: "9a7016b1-ac3b-4716-915c-e44d38383a02"
 Parent: "5ec169a8-f611-4e76-8c7f-50c97666ff07"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/VRBYOD/Page
+Path: /sitecore/templates/Project/VRBYOD/HomePage
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: Office/32x32/document_text.png
+  Value: Office/32x32/workstation.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Value: |
     {1930BBEB-7805-471A-A3BE-4858AC7CF696}
-    {2FA21400-EB0C-4339-ADC0-71FB2D762256}
+    {AD1CB5AB-CB35-4107-BD11-793053B31A38}
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{6FC3053E-6380-4D2C-A5C2-4F92928EB3C2}"
+  Value: "{18214E4B-2D75-442E-9B3B-7A7D8B7C71B0}"
 Languages:
 - Language: en
   Versions:
@@ -22,14 +22,14 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20210306T041144Z
+      Value: 20210306T155133Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1efb245c-a7e9-4cb4-801c-d6b3a9da19ba"
+      Value: "3d06dd8f-9c53-4493-a23c-1184cfcc4eca"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210306T155415Z
+      Value: 20210306T155232Z

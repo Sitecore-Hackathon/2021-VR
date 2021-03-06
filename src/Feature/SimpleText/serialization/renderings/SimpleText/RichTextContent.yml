@@ -2,11 +2,17 @@
 ID: "44955b7c-449c-4220-9a6a-79480d4691af"
 Parent: "5c8d5b62-eac6-44c6-b100-f457a9fa0c21"
 Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
-Path: /sitecore/layout/Renderings/Feature/SimpleText/RichText
+Path: /sitecore/layout/Renderings/Feature/SimpleText/RichTextContent
 SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
   Hint: componentName
-  Value: RichText
+  Value: RichTextContent
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Feature/SimpleText/RichText
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "query:./ancestor-or-self::*[@@templatename='Site']/Shared Content/Rich Text Content"
 Languages:
 - Language: en
   Versions:
@@ -17,11 +23,11 @@ Languages:
       Value: 20210306T153457Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a17bdaf8-4d6d-4f49-803b-e34ce6e90356"
+      Value: "9b71f271-c89e-4d6e-bc5f-0810717cbf0f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210306T153457Z
+      Value: 20210306T161825Z

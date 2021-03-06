@@ -1,0 +1,44 @@
+﻿---
+ID: "242ab349-557d-4071-bf3d-11023bb3fb32"
+Parent: "fe28e726-6206-4c69-a2b4-176aa8700066"
+Template: "dc6a987e-9a62-4b4e-9d78-578276a31bc9"
+Path: /sitecore/content/MLHost/Shared Content/Rich Text Content/Home Page Intro
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210306T161710Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d5eb8649-9f05-47a8-8fe1-a62a5cd160e6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210306T165104Z
+    - ID: "e091cce3-9495-43f5-a01e-113902758d90"
+      Hint: Content
+      Value: |
+        <div class="row">
+            <div class="col-8 offset-2">
+         <p class="content" /><h2 class="content"><strong>Build Your Own Dataset - By Team VR</strong></h2><p />
+            </div>
+        <div>
+           
+        </div></div>
