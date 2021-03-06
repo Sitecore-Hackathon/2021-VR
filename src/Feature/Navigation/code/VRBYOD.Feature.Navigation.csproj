@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Navigation.module.json" />
-    <Content Include="App_Config\Include\Feature\VRBYOD.Feature.Navigation.config" />
+    <None Include="App_Config\Include\Feature\VRBYOD.Feature.Navigation.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

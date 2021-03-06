@@ -57,7 +57,7 @@ do {
 		Write-Host "`r$WaitIndicator" -NoNewline
 		$i = 0
 	}
-} while ($status.status -ne "enabled" -and $startTime.AddSeconds(600) -gt (Get-Date))
+} while ($status.status -ne "enabled" -and $startTime.AddSeconds(60) -gt (Get-Date))
 Write-Host "`r$WaitIndicator"
 if (-not $status.status -eq "enabled") {
     $status
