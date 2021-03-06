@@ -1,0 +1,49 @@
+version: "2.4"
+services:
+  renderinghost-mlhost-solution:
+    isolation: ${ISOLATION}
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-renderinghost-mlhost-solution:${VERSION:-latest}
+    build:
+      context: ./
+      dockerfile: ./docker/build/renderingsolution-mlhost/Dockerfile
+      args:
+        BASE_IMAGE: ${SOLUTION_BASE_IMAGE}
+        BUILD_IMAGE: ${SOLUTION_BUILD_IMAGE}
+        BUILD_CONFIGURATION: ${BUILD_CONFIGURATION}
+        RENDERINGHOST_PROJECT_PATH: ${RENDERINGHOST_PROJECT_PATH_mlhost}
+    depends_on:
+      - dotnetsdk
+    scale: 0
+  renderinghost-mlhost:
+      image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-renderinghost-mlhost:${SITECORE_VERSION}
+      build:
+        context: ./docker/build/renderinghost-mlhost
+        target: ${BUILD_CONFIGURATION}
+        args:
+          DEBUG_BASE_IMAGE:  ${SOLUTION_BUILD_IMAGE}
+          RELEASE_BASE_IMAGE: ${NETCORE_BUILD_IMAGE}
+          SOLUTION_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
+          RENDERINGHOST_PROJECT_PATH: ${RENDERINGHOST_PROJECT_PATH_mlhost}
+      ports:
+        - "25183:80"
+      volumes:
+        -  .\:C:\solution
+      environment:
+        ASPNETCORE_ENVIRONMENT: "Development"
+        ASPNETCORE_URLS: "http://*:80"
+        Sitecore__InstanceUri: "http://cd"
+        Sitecore__RenderingHostUri: "https://${RE_HOST_mlhost}"
+        Sitecore__EnableExperienceEditor: "true"
+        RENDERINGHOST_PROJECT: ${RENDERINGHOST_PROJECT_mlhost}
+      depends_on:
+        - renderinghost-mlhost-solution
+        - cm
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.rendering-mlhost-secure.entrypoints=websecure"
+        - "traefik.http.routers.rendering-mlhost-secure.rule=Host(`${RE_HOST_mlhost}`)"
+        - "traefik.http.routers.rendering-mlhost-secure.tls=true"
+      healthcheck:
+        test: ["CMD", "curl", "-f", "http://localhost/healthz"]
+        interval: 60s
+        timeout: 30s

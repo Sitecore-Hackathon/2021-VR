@@ -1,0 +1,131 @@
+version: "2.4"
+
+services:
+
+  dotnetsdk:
+    isolation: ${ISOLATION}
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-dotnetsdk:${VERSION:-latest}
+    build:
+      context: ./docker/build/dotnetsdk
+      args:
+        BUILD_IMAGE: ${SOLUTION_BUILD_IMAGE}
+        NETCORE_BUILD_IMAGE: ${NETCORE_BUILD_IMAGE}
+    scale: 0
+ 
+  solution:
+    isolation: ${ISOLATION}
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
+    build:
+      context: ./
+      dockerfile: ./docker/build/solution/Dockerfile
+      args:
+        BASE_IMAGE: ${SOLUTION_BASE_IMAGE}
+        BUILD_IMAGE: ${SOLUTION_BUILD_IMAGE}
+        BUILD_CONFIGURATION: ${BUILD_CONFIGURATION}
+    depends_on:
+      - dotnetsdk
+    scale: 0
+
+  traefik:
+    volumes:
+      - ./docker/traefik:C:/etc/traefik
+    depends_on:
+      id:
+        condition: service_healthy
+      cd:
+        condition: service_started
+      cm:
+        condition: service_started
+  
+  redis:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-redis:${VERSION:-latest}
+    build:
+      context: ./docker/build/redis
+      args:
+        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}/sxp/sitecore-redis:${SITECORE_VERSION}
+
+  mssql:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xm1-mssql:${VERSION:-latest}
+    build:
+      context: ./docker/build/mssql
+      args:
+        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}/sxp/sitecore-xm1-mssql:${SITECORE_VERSION}
+        SPE_IMAGE: ${SITECORE_DOCKER_REGISTRY}/sxp/modules/spe-assets:${SPE_VERSION}
+        JSS_RESOURCES_IMAGE: ${SITECORE_DOCKER_REGISTRY}/sxp/modules/jss-xm1-assets:${JSS_VERSION}
+    mem_limit: 2GB   
+    volumes:
+      - ${LOCAL_DATA_PATH}\mssql:c:\data
+  solr:
+    volumes:
+      - ${LOCAL_DATA_PATH}\solr:c:\data
+    mem_limit: 1GB
+    restart: always
+
+  solr-init:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xm1-solr:${VERSION:-latest}
+    build:
+      context: ./docker/build/solr
+      args:
+        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}/sxp/sitecore-xm1-solr-init:${SITECORE_VERSION}
+
+  id:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-id:${VERSION:-latest}
+    build:
+      context: ./docker/build/id
+      args:
+        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}/sxp/sitecore-id:${SITECORE_VERSION}
+        SOLUTION_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
+    environment:
+      SITECORE_LICENSE_LOCATION: c:\license\license.xml
+    volumes:
+      - ${HOST_LICENSE_FOLDER}:c:\license
+    depends_on:
+      - solution
+
+  cd:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xm1-cd:${VERSION:-latest}
+    build:
+      context: ./docker/build/cd
+      args:
+        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}/sxp/sitecore-xm1-cd:${SITECORE_VERSION}
+        TOOLING_IMAGE: ${SITECORE_DOCKER_REGISTRY}/tools/sitecore-docker-tools-assets:${TOOLING_VERSION}
+        SOLUTION_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
+        JSS_RESOURCES_IMAGE: ${SITECORE_DOCKER_REGISTRY}/sxp/modules/jss-xm1-assets:${JSS_VERSION}
+    depends_on:
+      - solution
+    volumes:
+      - ${LOCAL_DEPLOY_PATH}\sitecore:C:\deploy
+      - ${LOCAL_DATA_PATH}\cd:C:\inetpub\wwwroot\App_Data\logs
+      - ${HOST_LICENSE_FOLDER}:c:\license
+    environment:
+      SITECORE_LICENSE_LOCATION: c:\license\license.xml
+    entrypoint: powershell.exe -Command "& C:\tools\entrypoints\iis\Development.ps1"
+    labels:
+      - "traefik.http.middlewares.force-STS-Header.headers.forceSTSHeader=true"
+      - "traefik.http.middlewares.force-STS-Header.headers.stsSeconds=31536000"
+      - "traefik.http.routers.cd-secure.entrypoints=websecure"
+      - "traefik.http.routers.cd-secure.rule=Host(`${CD_HOST}`)"
+      - "traefik.http.routers.cd-secure.tls=true"
+      - "traefik.http.routers.cd-secure.middlewares=force-STS-Header"
+
+  cm:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xm1-cm:${VERSION:-latest}
+    build:
+      context: ./docker/build/cm
+      args:
+        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}/sxp/sitecore-xm1-cm:${SITECORE_VERSION}
+        SMS_IMAGE: ${SITECORE_DOCKER_REGISTRY}/sxp/modules/sitecore-management-services-xm1-assets:${SMS_VERSION}
+        TOOLING_IMAGE: ${SITECORE_DOCKER_REGISTRY}/tools/sitecore-docker-tools-assets:${TOOLING_VERSION}
+        SOLUTION_IMAGE: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
+        SPE_IMAGE: ${SITECORE_DOCKER_REGISTRY}/sxp/modules/spe-assets:${SPE_VERSION}
+        JSS_RESOURCES_IMAGE: ${SITECORE_DOCKER_REGISTRY}/sxp/modules/jss-xm1-assets:${JSS_VERSION}
+    depends_on:
+      - solution
+    volumes:
+      - ${LOCAL_DEPLOY_PATH}\sitecore:C:\deploy
+      - ${LOCAL_DATA_PATH}\cm:C:\inetpub\wwwroot\App_Data\logs
+      - ${HOST_LICENSE_FOLDER}:c:\license
+      - ${LOCAL_voTT_Build_PATH}:C:\inetpub\wwwroot\sitecore\shell\client\Applications\Vott-App
+    environment:
+      SITECORE_LICENSE_LOCATION: c:\license\license.xml
+    entrypoint: powershell.exe -Command "& C:\tools\entrypoints\iis\Development.ps1"

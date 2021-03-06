@@ -1,0 +1,43 @@
+{
+    "namespace": "Project.MLHost",   
+    "items": {
+      "includes": [
+        //{
+        //  "name": "templates",
+        //  "path": "/sitecore/templates/Project/MLHost"
+        //},
+        //{
+        //  "name": "branches",
+        //  "path": "/sitecore/templates/Branches/Project/MLHost"
+        //},
+        //{
+        //  "name": "dictionary",
+        //  "path": "/sitecore/system/Dictionary/MLHost"
+        //},
+        //{
+        //  "name": "forms",
+        //  "path": "/sitecore/Forms/MLHost"
+        //},
+		//{
+        //  "name": "media",
+        //  "path": "/sitecore/media library/MLHost"
+        //},
+        {
+          "name": "layouts",
+          "path": "/sitecore/layout/Layouts/Project/MLHost"
+        },
+        {
+          "name": "placeholders",
+          "path": "/sitecore/layout/Placeholder Settings/Project/MLHost"
+        },
+        {
+          "name": "content",
+          "path": "/sitecore/content/MLHost"
+        },
+        {
+          "name": "apikey",
+          "path": "/sitecore/system/Settings/Services/API Keys/MLHost"
+        }
+      ]
+    }
+  }
