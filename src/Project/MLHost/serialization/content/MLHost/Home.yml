@@ -1,6 +1,6 @@
 ﻿---
-ID: "d0767f29-8f8e-4d38-9fac-1ed4709204a1"
-Parent: "335a09b3-e7e6-4732-8c33-a93237017e95"
+ID: "21a422ff-3367-492c-a2ec-b003db11e9f6"
+Parent: "de67a8ad-4c87-4ba8-9d78-fc52e5460631"
 Template: "76036f5e-cbce-46d1-af0a-4143f9b557aa"
 Path: /sitecore/content/MLHost/Home
 SharedFields:
@@ -14,7 +14,7 @@ SharedFields:
       p:p="1">
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
-        s:l="{86d95f02-ac0e-46a8-89df-c38ce82b6783}">
+        s:l="{8d39f03f-dc3b-42ec-a9d4-d068077241cb}">
         <r
           uid="{43222D12-08C9-453B-AE96-D406EBB95126}">
           <p:d />
@@ -45,10 +45,10 @@ Languages:
       Value: "{FCA998C5-0CC3-4F91-94D8-0A4E6CAECE88}"
     - ID: "75577384-3c97-45da-a847-81b00500e250"
       Hint: Title
-      Value: ValtechHelix VRBYOD MLHost
+      Value: BYOD Image Object Detection
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "10cdc71a-e277-4acb-8b77-1538b35be1f1"
+      Value: "e5906c2e-edc3-4470-9780-7937f39238ed"
     - ID: "a60acd61-a6db-4182-8329-c957982cec74"
       Hint: Text
       Value: |
@@ -57,13 +57,13 @@ Languages:
         <br />
         <br />
         <center>
-        <h1>Hello World!</h1>
-        <p>- ValtechHelix - VRBYOD - MLHost -</p>
         </center>
+        <h1><em><strong>Welcome to BYOD Object Detection</strong></em></h1>
+        <p>&nbsp;</p>
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210127T211201Z
+      Value: 20210305T124038Z

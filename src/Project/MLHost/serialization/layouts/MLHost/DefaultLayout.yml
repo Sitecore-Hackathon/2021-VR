@@ -1,15 +1,15 @@
 ﻿---
-ID: "86d95f02-ac0e-46a8-89df-c38ce82b6783"
-Parent: "f6a72d54-6b9d-4771-847c-86ca32285481"
+ID: "8d39f03f-dc3b-42ec-a9d4-d068077241cb"
+Parent: "321d020e-3f40-4c4a-aa0d-e2515f50d8af"
 Template: "35c61e90-47dd-43dd-83a8-d1c4d5119720"
 Path: /sitecore/layout/Layouts/Project/MLHost/DefaultLayout
 SharedFields:
 - ID: "80334869-86dc-4472-aa89-44cf1b2f6c9b"
   Hint: Placeholders
   Value: |
-    {d8aaf9a7-10a0-43ae-ba13-78cb10d551d9}
-    {1001e3b5-41a6-40b5-91c8-6a9e4b1bc9e4}
-    {dd4584cb-d65a-47c1-b026-381c4af06e06}
+    {4FE75248-424F-4C93-8591-FCE4BE3773D6}
+    {58BDC4DA-E338-41DE-BBC7-FD9CF6A86AA2}
+    {B493BB95-9409-4D64-938F-62BC8AEDC004}
 - ID: "a036b2bc-ba04-44f6-a75f-bae6cd242abf"
   Hint: Path
   Value: /Views/Default/Index.cshtml
