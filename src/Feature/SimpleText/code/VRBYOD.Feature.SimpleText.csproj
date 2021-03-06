@@ -45,6 +45,11 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
   </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Sitecore.Kernel" Version="10.1.0" />
+        <PackageReference Include="Sitecore.LayoutService" Version="10.1.0" />
+        <PackageReference Include="Sitecore.Mvc" Version="10.1.0" />
+    </ItemGroup>
   <ItemGroup>
 	  <Content Include="SimpleText.module.json" />
     <None Include="Web.config" />

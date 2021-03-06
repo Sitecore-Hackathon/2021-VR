@@ -8,8 +8,9 @@ namespace VRBYOD.Feature.Navigation.Rendering.Extensions
     {
         public static RenderingEngineOptions AddFeatureNavigation(this RenderingEngineOptions options)
         {
-            options.AddModelBoundView<NavigationModel>("Navigation");
-
+            options.AddModelBoundView<TopLinks>("TopLinks")
+                   .AddModelBoundView<MainNav>("MainNav")
+                   .AddModelBoundView<Footer>("Footer");
             return options;
         }
     }

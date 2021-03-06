@@ -22,6 +22,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <ProjectGuid>{AE7F7965-C9E0-46D7-AA78-DAF06181D55C}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,11 +47,26 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-	  <Content Include="Navigation.module.json" />
+    <PackageReference Include="Sitecore.Kernel" Version="10.1.0" />
+    <PackageReference Include="Sitecore.LayoutService" Version="10.1.0" />
+    <PackageReference Include="Sitecore.Mvc" Version="10.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Navigation.module.json" />
+    <Content Include="App_Config\Include\Feature\VRBYOD.Feature.Navigation.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="LayoutService\MainNavContentResolver.cs" />
+    <Compile Include="LayoutService\TopLinksContentResolver.cs" />
+    <Compile Include="Models\Link.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicesConfigurator.cs" />
+    <Compile Include="Services\INavigationBuilder.cs" />
+    <Compile Include="Services\ITopLinksBuilder.cs" />
+    <Compile Include="Services\NavigationBuilder.cs" />
+    <Compile Include="Services\TopLinksBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -61,6 +77,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
