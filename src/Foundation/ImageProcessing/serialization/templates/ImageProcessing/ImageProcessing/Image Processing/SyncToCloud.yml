@@ -2,7 +2,7 @@
 ID: "84cfa801-39bd-4245-9630-e1a53326fb2a"
 Parent: "7755d774-a56d-4b83-b4f5-392ced9515f2"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Foundation/VRBYOD/ImageProcessing/Image Processing/SyncToCloud
+Path: /sitecore/templates/Foundation/ImageProcessing/ImageProcessing/Image Processing/SyncToCloud
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
