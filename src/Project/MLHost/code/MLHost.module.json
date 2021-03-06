@@ -2,10 +2,10 @@
     "namespace": "Project.MLHost",   
     "items": {
       "includes": [
-        //{
-        //  "name": "templates",
-        //  "path": "/sitecore/templates/Project/MLHost"
-        //},
+        {
+          "name": "templates",
+          "path": "/sitecore/templates/Project/VRBYOD"
+        },
         //{
         //  "name": "branches",
         //  "path": "/sitecore/templates/Branches/Project/MLHost"
@@ -18,10 +18,10 @@
         //  "name": "forms",
         //  "path": "/sitecore/Forms/MLHost"
         //},
-		//{
-        //  "name": "media",
-        //  "path": "/sitecore/media library/MLHost"
-        //},
+        {
+          "name": "mediaproject",
+          "path": "/sitecore/media library/Project"
+        },
         {
           "name": "layouts",
           "path": "/sitecore/layout/Layouts/Project/MLHost"
@@ -37,6 +37,11 @@
         {
           "name": "apikey",
           "path": "/sitecore/system/Settings/Services/API Keys/MLHost"
+        },
+        {
+          "name": "vott-app",
+          "database": "core",
+          "path": "/sitecore/client/Applications/Launchpad/PageSettings/Buttons/Tools/ImageMapping"
         }
       ]
     }

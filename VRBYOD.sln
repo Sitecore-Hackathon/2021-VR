@@ -1,4 +1,5 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30105.148
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -8,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Files", "_Solutio
 		init.ps1 = init.ps1
 		README.md = README.md
 		sitecore.json = sitecore.json
-		up.ps1 = up.ps1
+		Start.ps1 = Start.ps1
+		Stop.ps1 = Stop.ps1
+		SUBMISSION_REQUIREMENTS.md = SUBMISSION_REQUIREMENTS.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Environment", "Environment", "{B04642CD-8FAB-4282-8C7E-E79942FC3ABB}"
@@ -34,23 +37,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefaultSite", "DefaultSite"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MLHost", "MLHost", "{16920F26-45FD-459A-A70A-B1430D0E68C3}"
 EndProject
-Project("{fae04ec0-301f-11d3-bf4b-00c04f79efbc}") = "VRBYOD.Project.MLHost", "src\Project\MLHost\code\VRBYOD.Project.MLHost.csproj", "{C1C420E1-FEFC-41C2-9255-3B6647F75E84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRBYOD.Project.MLHost", "src\Project\MLHost\code\VRBYOD.Project.MLHost.csproj", "{C1C420E1-FEFC-41C2-9255-3B6647F75E84}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImageProcessing", "ImageProcessing", "{DC12306C-83CF-46E1-99B9-25E9140529F2}"
 EndProject
-Project("{fae04ec0-301f-11d3-bf4b-00c04f79efbc}") = "VRBYOD.Foundation.ImageProcessing", "src\Foundation\ImageProcessing\code\VRBYOD.Foundation.ImageProcessing.csproj", "{8F610233-7487-48B1-BFCD-776A3610AA18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRBYOD.Foundation.ImageProcessing", "src\Foundation\ImageProcessing\code\VRBYOD.Foundation.ImageProcessing.csproj", "{8F610233-7487-48B1-BFCD-776A3610AA18}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Settings", "Settings", "{6D41169D-9A4F-4785-8A65-5BCB2E16601A}"
 EndProject
-Project("{fae04ec0-301f-11d3-bf4b-00c04f79efbc}") = "VRBYOD.Foundation.Settings", "src\Foundation\Settings\code\VRBYOD.Foundation.Settings.csproj", "{FB28C03E-FCC4-480A-BA52-4EAE300EF10F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRBYOD.Foundation.Settings", "src\Foundation\Settings\code\VRBYOD.Foundation.Settings.csproj", "{FB28C03E-FCC4-480A-BA52-4EAE300EF10F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{D308BFF8-CE94-4469-BA87-02BA91127F9E}"
 EndProject
-Project("{fae04ec0-301f-11d3-bf4b-00c04f79efbc}") = "VRBYOD.Feature.Navigation", "src\Feature\Navigation\code\VRBYOD.Feature.Navigation.csproj", "{AE7F7965-C9E0-46D7-AA78-DAF06181D55C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRBYOD.Feature.Navigation", "src\Feature\Navigation\code\VRBYOD.Feature.Navigation.csproj", "{AE7F7965-C9E0-46D7-AA78-DAF06181D55C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleText", "SimpleText", "{12AA92A0-D364-4E26-8696-6B8F31A61FB6}"
 EndProject
-Project("{fae04ec0-301f-11d3-bf4b-00c04f79efbc}") = "VRBYOD.Feature.SimpleText", "src\Feature\SimpleText\code\VRBYOD.Feature.SimpleText.csproj", "{3DAEAAEA-3622-42D5-A169-2331E5264D62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRBYOD.Feature.SimpleText", "src\Feature\SimpleText\code\VRBYOD.Feature.SimpleText.csproj", "{3DAEAAEA-3622-42D5-A169-2331E5264D62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

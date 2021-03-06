@@ -1,3 +1,9 @@
+[CmdletBinding(DefaultParameterSetName = "no-arguments")]
+Param (
+    [Parameter(HelpMessage = "Skip Build")]
+    [switch]$SkipBuild
+)
+
 # ENSURE ENV FILE EXISTS
 if(-not (Test-Path .env)) {
     Write-Host "Docker Env file not found. Have you run init.ps1 first? Refer to README.md for details" -ForegroundColor Red
@@ -16,15 +22,16 @@ dotnet tool restore
 
 $dockerCompose = "docker-compose -f docker-compose.yml -f docker-compose.override.yml -f docker-compose.core.mlhost.yml"
 
+if($SkipBuild -eq $false){
+    # Build all containers in the Sitecore instance, forcing a pull of latest base containers
+    Write-Host "BUILD the docker containers..." -ForegroundColor Green
+    Write-Host "$dockerCompose build"
+    Invoke-Expression "$dockerCompose build"
 
-# Build all containers in the Sitecore instance, forcing a pull of latest base containers
-Write-Host "BUILD the docker containers..." -ForegroundColor Green
-Write-Host "$dockerCompose build"
-Invoke-Expression "$dockerCompose build"
-
-if ($LASTEXITCODE -ne 0)
-{
-    Write-Error "Container build failed, see errors above."
+    if ($LASTEXITCODE -ne 0)
+    {
+        Write-Error "Container build failed, see errors above."
+    }
 }
 
 # Run the docker containers
