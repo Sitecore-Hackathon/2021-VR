@@ -38,6 +38,11 @@
     <ProjectReference Include="..\..\..\Feature\Navigation\rendering\VRBYOD.Feature.Navigation.Rendering.csproj" />
     <ProjectReference Include="..\..\..\Foundation\Settings\rendering\VRBYOD.Foundation.Settings.Rendering.csproj" />
     <ProjectReference Include="..\..\..\Foundation\CustomVision\rendering\VRBYOD.Foundation.CustomVision.Rendering.csproj" />
+    <ProjectReference Include="..\..\..\Feature\VisionComponents\rendering\VRBYOD.Feature.VisionComponents.Rendering.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
   </ItemGroup>
   
 </Project>
