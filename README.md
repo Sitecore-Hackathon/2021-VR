@@ -13,9 +13,8 @@ As we are now familiar with a lot of AI tools that allow users to classify & Tag
 We think this could be of great use as the dataset is created by end users who master their product line and so they can easily build their own ! We then do the difficult part of training it. It can also be coupled with Sitecore.ai and could serve as a tagging service for Content Hub. You can think of so many different use cases !
 
 ## Video link
-⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
-
-⟹ [Replace this Video link](#video-link)
+⟹ VideoLink ([Video Link](https://www.youtube.com/watch?v=HsOY0HCb9do))
+#####Apologies for bad quality and no audio but please watch till the end to see predictions.
 
 
 
