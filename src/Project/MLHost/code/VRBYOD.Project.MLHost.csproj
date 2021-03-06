@@ -47,7 +47,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MLHost.module.json.disabled" />
+    <Content Include="MLHost.module.json" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
