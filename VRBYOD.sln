@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30105.148
@@ -55,6 +55,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleText", "SimpleText", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRBYOD.Feature.SimpleText", "src\Feature\SimpleText\code\VRBYOD.Feature.SimpleText.csproj", "{3DAEAAEA-3622-42D5-A169-2331E5264D62}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VisionComponents", "VisionComponents", "{274F0C8F-3D8E-4562-A245-E3AB700A36C8}"
+	ProjectSection(SolutionItems) = preProject
+		src\Feature\VisionComponents\code\VisionComponents.module.json = src\Feature\VisionComponents\code\VisionComponents.module.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +114,7 @@ Global
 		{AE7F7965-C9E0-46D7-AA78-DAF06181D55C} = {D308BFF8-CE94-4469-BA87-02BA91127F9E}
 		{12AA92A0-D364-4E26-8696-6B8F31A61FB6} = {F1800335-D16A-4FB6-B213-1885963E283D}
 		{3DAEAAEA-3622-42D5-A169-2331E5264D62} = {12AA92A0-D364-4E26-8696-6B8F31A61FB6}
+		{274F0C8F-3D8E-4562-A245-E3AB700A36C8} = {F1800335-D16A-4FB6-B213-1885963E283D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45

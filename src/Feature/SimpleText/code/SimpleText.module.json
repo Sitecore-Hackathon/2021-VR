@@ -2,14 +2,14 @@
     "namespace": "Feature.SimpleText",   
     "items": {
       "includes": [
-        //{
-        //  "name": "templates",
-        //  "path": "/sitecore/templates/Feature/SimpleText"
-        //},
-		//{
-        //  "name": "renderings",
-        //  "path": "/sitecore/layout/renderings/Feature/SimpleText"
-		//}
+        {
+          "name": "templates",
+          "path": "/sitecore/templates/Feature/SimpleText"
+        },
+		{
+          "name": "renderings",
+          "path": "/sitecore/layout/renderings/Feature/SimpleText"
+		}
         //,{
         //  "name": "media",
         //  "path": "/sitecore/media library/Feature/SimpleText"

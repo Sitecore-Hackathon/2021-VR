@@ -1,0 +1,35 @@
+{
+    "namespace": "Feature.VisionComponents",   
+    "items": {
+      "includes": [
+        //{
+        //  "name": "templates",
+        //  "path": "/sitecore/templates/Feature/VisionComponents"
+        //},
+		{
+          "name": "renderings",
+          "path": "/sitecore/layout/renderings/Feature/VisionComponents"
+		}
+        //,{
+        //  "name": "media",
+        //  "path": "/sitecore/media library/Feature/VisionComponents"
+        //},
+        //{
+        //  "name": "settings",
+        //  "path": "/sitecore/media library/Feature/VisionComponents"
+        //},
+        //{
+        //  "name": "branches",
+        //  "path": "/sitecore/templates/Branches/Feature/VisionComponents"
+        //},
+        //{
+        //  "name": "placeholdersettings",
+        //  "path": "/sitecore/layout/Placeholder Settings/Feature/VisionComponents"
+        //},
+		//{
+        //  "name": "layouts",
+        //  "path": "/sitecore/layout/Layouts/Feature/VisionComponents"
+        //}
+      ]
+    }
+  }
