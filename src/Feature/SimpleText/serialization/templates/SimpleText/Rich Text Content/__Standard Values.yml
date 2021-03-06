@@ -2,7 +2,7 @@
 ID: "fc44a449-3a63-4482-8140-ec7bfc007bc4"
 Parent: "64ad1284-23fb-4b76-85b3-c6dfb1b322bf"
 Template: "64ad1284-23fb-4b76-85b3-c6dfb1b322bf"
-Path: /sitecore/templates/Feature/BasicContent/Rich Text Content/__Standard Values
+Path: /sitecore/templates/Feature/SimpleText/Rich Text Content/__Standard Values
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon

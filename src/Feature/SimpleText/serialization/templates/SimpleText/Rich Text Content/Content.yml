@@ -2,7 +2,7 @@
 ID: "1a250042-4ebe-48c1-afc5-e4354c8761c7"
 Parent: "64ad1284-23fb-4b76-85b3-c6dfb1b322bf"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/BasicContent/Rich Text Content/Content
+Path: /sitecore/templates/Feature/SimpleText/Rich Text Content/Content
 Languages:
 - Language: en
   Versions:

@@ -83,6 +83,12 @@
       <Version>4.6.0</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Settings\code\VRBYOD.Foundation.Settings.csproj">
+      <Project>{fb28c03e-fcc4-480a-ba52-4eae300ef10f}</Project>
+      <Name>VRBYOD.Foundation.Settings</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

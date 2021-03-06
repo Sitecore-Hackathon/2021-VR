@@ -12,21 +12,22 @@ namespace VRBYOD.Foundation.ImageProcessing.Service
     {
         private BlobContainerClient _blobContainer;
 
-        private string _containerName
+        private Item _settingItem
         {
-            get { return Settings.GetSetting("AzureBlob.Container"); }
-        }
-        private string _connectionString
-        {
-            get { return Settings.GetSetting("AzureBlob.ConnectionString"); }
+            get
+            {
+                var db = Sitecore.Context.ContentDatabase ?? Sitecore.Context.Database;
+                return db.GetItem(new Sitecore.Data.ID(Sitecore.Configuration.Settings.GetSetting("VRBYOD-Setting-Item")
+              ));
+
+            }
         }
 
         public AzureStorage()
         {
-            _blobContainer = new BlobContainerClient(_connectionString, _containerName);
+            //Init Container client
+            _blobContainer = new BlobContainerClient(_settingItem.Fields[Constants.Settings.AzureBlobStorageConnectionString].Value, _settingItem.Fields[Constants.Settings.TrainingImageContainer].Value);
         }
-
-
 
         public string UploadMedia(MediaItem media)
         {
