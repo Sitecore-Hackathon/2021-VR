@@ -22,6 +22,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <ProjectGuid>{FB28C03E-FCC4-480A-BA52-4EAE300EF10F}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,7 +47,8 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-	  <Content Include="Settings.module.json" />
+    <Content Include="Settings.module.json" />
+    <Content Include="App_Config\Include\Foundation\VRBYOD.Foundation.Settings.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
