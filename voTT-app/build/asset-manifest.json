@@ -1,0 +1,16 @@
+{
+  "main.css": "./static/css/main.d701d976.chunk.css",
+  "main.js": "./static/js/main.c00f4e45.chunk.js",
+  "main.js.map": "./static/js/main.c00f4e45.chunk.js.map",
+  "static/css/1.ca8469cc.chunk.css": "./static/css/1.ca8469cc.chunk.css",
+  "static/js/1.5da8b966.chunk.js": "./static/js/1.5da8b966.chunk.js",
+  "static/js/1.5da8b966.chunk.js.map": "./static/js/1.5da8b966.chunk.js.map",
+  "runtime~main.js": "./static/js/runtime~main.4a686d48.js",
+  "runtime~main.js.map": "./static/js/runtime~main.4a686d48.js.map",
+  "static/media/all.css": "./static/media/fa-brands-400.3e30e90a.svg",
+  "static/css/main.d701d976.chunk.css.map": "./static/css/main.d701d976.chunk.css.map",
+  "static/css/1.ca8469cc.chunk.css.map": "./static/css/1.ca8469cc.chunk.css.map",
+  "index.html": "./index.html",
+  "precache-manifest.beb4d789b99f241dca744f6cdb3f229c.js": "./precache-manifest.beb4d789b99f241dca744f6cdb3f229c.js",
+  "service-worker.js": "./service-worker.js"
+}
