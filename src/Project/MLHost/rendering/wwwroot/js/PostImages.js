@@ -121,6 +121,7 @@
                             $('#train-btn').prop('disabled', true);
                             $('#model-info').text('A model named --> ' + modelName + ' is currently being trained! Please try after sometime');
                             $('#model-info').show();
+                            alert(result);
                         }
                     });
                 }

@@ -120,25 +120,33 @@ namespace VRBYOD.Foundation.CustomVision.Rendering.Service
         /// <summary>
         /// Train your custom project in Custom Vistion AI
         /// </summary>
-        public void TrainProject(string customModelName)
+        public string TrainProject(string customModelName)
         {
             ///Create Training Api
             var trainingApi = AuthenticateTraining(_trainerEndpoint, _trainerKey);
             //Get Project
             var project = trainingApi.GetProject(new Guid(_projectId));
-            ///Train project - Returns iteration
-            var iteration = trainingApi.TrainProject(project.Id);
-
-            // The returned iteration will be in progress, and can be queried periodically to see when it has completed
-            while (iteration.Status == "Training")
+            try
             {
-                // Re-query the iteration to get it's updated status
-                iteration = trainingApi.GetIteration(project.Id, iteration.Id);
-                /// TODO : Use Hub to post iteration Info
-            }
+                ///Train project - Returns iteration
+                var iteration = trainingApi.TrainProject(project.Id);
 
-            //Now it's time to publish iteration
-            PublishIteration(trainingApi, project, iteration, customModelName);
+                // The returned iteration will be in progress, and can be queried periodically to see when it has completed
+                while (iteration.Status == "Training")
+                {
+                    // Re-query the iteration to get it's updated status
+                    iteration = trainingApi.GetIteration(project.Id, iteration.Id);
+                    /// TODO : Use Hub to post iteration Info
+                }
+
+                //Now it's time to publish iteration
+                PublishIteration(trainingApi, project, iteration, customModelName);
+                return "Model Trained and Published Successfully";
+            }
+            catch(Exception ex)
+            {
+                return ex.Message;
+            }
         }
         /// <summary>
         /// Purge Images from Project - to help clear data and start over again using voTT app
@@ -155,6 +163,7 @@ namespace VRBYOD.Foundation.CustomVision.Rendering.Service
         private void PublishIteration(CustomVisionTrainingClient trainingApi, Project project, Iteration iteration, string modelName)
         {
             trainingApi.PublishIteration(project.Id, iteration.Id, modelName, _predictionResourceId);
+            
             // Now there is a trained endpoint, it can be used to make a prediction
         }
 

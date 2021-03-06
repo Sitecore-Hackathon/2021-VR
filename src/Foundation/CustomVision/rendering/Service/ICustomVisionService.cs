@@ -22,7 +22,7 @@ namespace VRBYOD.Foundation.CustomVision.Rendering.Service
         /// Train and Publish Model
         /// </summary>
         /// <param name="customModelName"></param>
-        public void TrainProject(string customModelName);
+        public string TrainProject(string customModelName);
 
         /// <summary>
         /// Clear Images from Project -- to start again

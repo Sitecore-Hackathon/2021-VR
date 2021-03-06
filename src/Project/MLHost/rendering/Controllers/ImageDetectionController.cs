@@ -71,8 +71,8 @@ namespace VRBYOD.Project.MLHost.Rendering.Controllers
         [Route("TrainProject")]
         public async Task<IActionResult> TrainProject([FromForm] string publishModelName)
         {
-            await Task.Run(() => _customVisionService.TrainProject(publishModelName));
-            return Ok(new { Result = "Training Done!" });
+            var trainInfo = await Task.Run(() => _customVisionService.TrainProject(publishModelName));
+            return Ok(new { Result = trainInfo });
         }
 
         [HttpDelete]
