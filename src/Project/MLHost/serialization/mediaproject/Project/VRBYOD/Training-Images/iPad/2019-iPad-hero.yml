@@ -26,9 +26,6 @@ SharedFields:
 - ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
   Hint: Mime Type
   Value: image/jpeg
-- ID: "84cfa801-39bd-4245-9630-e1a53326fb2a"
-  Hint: SyncToCloud
-  Value: 1
 - ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
   Hint: Extension
   Value: jpg
