@@ -39,9 +39,5 @@
     <ProjectReference Include="..\..\..\Foundation\CustomVision\rendering\VRBYOD.Foundation.CustomVision.Rendering.csproj" />
     <ProjectReference Include="..\..\..\Feature\VisionComponents\rendering\VRBYOD.Feature.VisionComponents.Rendering.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
   
 </Project>
