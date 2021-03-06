@@ -50,12 +50,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ImageProcessing.module.json" />
+    <Content Include="App_Config\Include\Foundation\VRBYOD.Foundation.ImageProcessing.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="Helpers\MediaHelper.cs" />
+    <Compile Include="Pipelines\CheckIfTrainingFolder.cs" />
+    <Compile Include="Pipelines\ProcessMedia.cs" />
     <Compile Include="Pipelines\Processor\DeleteMediaProcessor.cs" />
+    <Compile Include="Pipelines\Processor\UploadToAzure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\AzureStorage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
