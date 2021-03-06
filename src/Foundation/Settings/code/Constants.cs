@@ -10,16 +10,16 @@ namespace VRBYOD.Foundation.Settings
     {
         public static class SettingsTemplate
         {
-            public static readonly ID TrainingImageContainer = new ID("{DA4B4B8A-D927-471A-81F6-BBA3F6C5301E}");
-            public static readonly ID TrainingImageOutputContainer = new ID("{9C9CD775-A766-4824-9423-497761C61062}");
-            public static readonly ID AzureBlobStorageConnectionString = new ID("{78090A6F-875F-4371-AD64-8F52C319BC20}");
+            public static readonly ID TrainingImageContainer = new ID("{393FD4F6-8835-432A-B804-CBA3EF0960C4}");
+            public static readonly ID TrainingImageOutputContainer = new ID("{5938A47B-65FE-48E8-8329-C08D18A289D7}");
+            public static readonly ID AzureBlobStorageConnectionString = new ID("{8A1A318C-06B6-470E-8717-A1E2F08A8234}");
 
-            public static readonly ID PredictionEndpoint = new ID("{A2BD0E25-1187-4B19-9DDA-D67C7A88590E}");
-            public static readonly ID PredictionKey = new ID("{56CD18A5-86D6-41E6-96F4-F8C5D27C4CE7}");
-            public static readonly ID TrainingEndpoint = new ID("{4279F4A6-D9D6-403D-9EDB-D20D14A7BD87}");
-            public static readonly ID TrainingKey = new ID("{115EFDC5-AC77-456F-B510-BB09A5D6F923}");
-            public static readonly ID PredictionResourceId = new ID("{D1DC7512-4617-4014-9E65-1EF8522BD5BA}");
-            public static readonly ID ProjectId = new ID("{0817D52A-64B1-43D5-9AC8-CE50708CD0DA}");
+            public static readonly ID PredictionEndpoint = new ID("{7939FD77-E18C-4567-AE91-8CA496A5847D}");
+            public static readonly ID PredictionKey = new ID("{31A9A831-9008-48CC-80F2-580EDA2905A8}");
+            public static readonly ID TrainingEndpoint = new ID("{2A840CA6-B92F-4223-86F0-D21DC3FA6BE1}");
+            public static readonly ID TrainingKey = new ID("{119C5472-0A43-49E3-8EE1-791305958D02}");
+            public static readonly ID PredictionResourceId = new ID("{94445052-5B4F-4A60-9806-F02EFC24DB54}");
+            public static readonly ID ProjectId = new ID("{A37135DB-42A6-46E4-A4BB-BA00EE46D606}");
         }
     }
 }

@@ -2,34 +2,10 @@
     "namespace": "Foundation.Settings",   
     "items": {
       "includes": [
-        //{
-        //  "name": "templates",
-        //  "path": "/sitecore/templates/Foundation/Settings"
-        //},
-		//{
-        //  "name": "renderings",
-        //  "path": "/sitecore/layout/renderings/Foundation/Settings"
-		//}
-        //,{
-        //  "name": "media",
-        //  "path": "/sitecore/media library/Foundation/Settings"
-        //},
-        //{
-        //  "name": "settings",
-        //  "path": "/sitecore/media library/Foundation/Settings"
-        //},
-        //{
-        //  "name": "branches",
-        //  "path": "/sitecore/templates/Branches/Foundation/Settings"
-        //},
-        //{
-        //  "name": "placeholdersettings",
-        //  "path": "/sitecore/layout/Placeholder Settings/Foundation/Settings"
-        //},
-		//{
-        //  "name": "layouts",
-        //  "path": "/sitecore/layout/Layouts/Project/Settings"
-        //}
+        {
+         "name": "templates",
+         "path": "/sitecore/templates/Foundation/Settings"
+        }
       ]
     }
   }

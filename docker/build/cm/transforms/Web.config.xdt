@@ -9,4 +9,7 @@
         </httpProtocol>
       </system.webServer>
   </location>
+  <system.web>
+         <customErrors mode="Off"  xdt:Transform="Replace"/>
+  </system.web>
 </configuration>

@@ -1,7 +1,7 @@
 ﻿---
-ID: "0cd4bcc3-8adb-4042-9c96-c1b43612fccb"
+ID: "04d8df42-d920-4a71-b27c-dc14a7957291"
 Parent: "f9edc673-d48d-4050-810d-9d84973ebfe1"
-Template: "0471a315-0548-44e5-8596-91705858bfb3"
+Template: "5e54e244-b65a-455b-88ff-6481326ef139"
 Path: "/sitecore/content/MLHost/Settings/BYOD-Settings"
 Languages:
 - Language: en
@@ -10,14 +10,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20210306T074452Z
+      Value: 20210306T145530Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b17148a4-514f-4d24-b9f9-4478f37264d9"
+      Value: "a6cdcc67-d124-4426-9db1-c1c197866697"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210306T074501Z
+      Value: 20210306T145530Z
