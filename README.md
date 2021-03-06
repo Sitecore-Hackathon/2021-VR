@@ -8,7 +8,7 @@
 ## Intro :
 
 As we are now familiar with a lot of AI tools that allow users classify & Tag images but they are mostly limited to a General Dataset - mostly realy world tags like Person, Vehicle, Animal etc. * It takes a huge effort to custom train specific images - let's say images related to a product line **( yes - we have trained to predict Apple Products.)**.
-#### So we took this intiative to drive a BYOD pipeline mainly using Sitecore and Headless Service to predict !
+#### So we took this initiative to drive a BYOD pipeline using Sitecore and Headless Service !
 
 ## Value add : 
 We think this could be of great use as the dataset is created by end users who master their product line and so they can easily build their own ! We then do the difficult part of training it. It can also be coupled with Sitecore.ai and could serve as a tagging service for Content Hub. You can think of so many different use cases !
