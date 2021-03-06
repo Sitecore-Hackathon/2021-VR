@@ -32,5 +32,12 @@
     <PackageReference Include="Sitecore.AspNet.RenderingEngine" Version="15.0.1" />
     <PackageReference Include="Sitecore.LayoutService.Client" Version="15.0.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Feature\SimpleText\rendering\VRBYOD.Feature.SimpleText.Rendering.csproj" />
+    <ProjectReference Include="..\..\..\Feature\Navigation\rendering\VRBYOD.Feature.Navigation.Rendering.csproj" />
+    <ProjectReference Include="..\..\..\Foundation\Settings\rendering\VRBYOD.Foundation.Settings.Rendering.csproj" />
+    <ProjectReference Include="..\..\..\Foundation\CustomVision\rendering\VRBYOD.Foundation.CustomVision.Rendering.csproj" />
+  </ItemGroup>
   
 </Project>

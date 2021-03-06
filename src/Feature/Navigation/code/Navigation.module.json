@@ -1,0 +1,35 @@
+{
+    "namespace": "Feature.Navigation",   
+    "items": {
+      "includes": [
+        //{
+        //  "name": "templates",
+        //  "path": "/sitecore/templates/Feature/Navigation"
+        //},
+		//{
+        //  "name": "renderings",
+        //  "path": "/sitecore/layout/renderings/Feature/Navigation"
+		//}
+        //,{
+        //  "name": "media",
+        //  "path": "/sitecore/media library/Feature/Navigation"
+        //},
+        //{
+        //  "name": "settings",
+        //  "path": "/sitecore/media library/Feature/Navigation"
+        //},
+        //{
+        //  "name": "branches",
+        //  "path": "/sitecore/templates/Branches/Feature/Navigation"
+        //},
+        //{
+        //  "name": "placeholdersettings",
+        //  "path": "/sitecore/layout/Placeholder Settings/Feature/Navigation"
+        //},
+		//{
+        //  "name": "layouts",
+        //  "path": "/sitecore/layout/Layouts/Project/Navigation"
+        //}
+      ]
+    }
+  }

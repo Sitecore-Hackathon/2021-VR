@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>VRBYOD.Feature.Navigation.Rendering</AssemblyName>
+    <RootNamespace>VRBYOD.Feature.Navigation.Rendering</RootNamespace>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sitecore.LayoutService.Client" Version="15.0.1" />
+    <PackageReference Include="Sitecore.AspNet.RenderingEngine" Version="15.0.1" />
+  </ItemGroup>
+
+</Project>

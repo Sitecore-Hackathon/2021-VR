@@ -1,0 +1,35 @@
+{
+    "namespace": "Foundation.ImageProcessing",   
+    "items": {
+      "includes": [
+        //{
+        //  "name": "templates",
+        //  "path": "/sitecore/templates/Foundation/ImageProcessing"
+        //},
+		//{
+        //  "name": "renderings",
+        //  "path": "/sitecore/layout/renderings/Foundation/ImageProcessing"
+		//}
+        //,{
+        //  "name": "media",
+        //  "path": "/sitecore/media library/Foundation/ImageProcessing"
+        //},
+        //{
+        //  "name": "settings",
+        //  "path": "/sitecore/media library/Foundation/ImageProcessing"
+        //},
+        //{
+        //  "name": "branches",
+        //  "path": "/sitecore/templates/Branches/Foundation/ImageProcessing"
+        //},
+        //{
+        //  "name": "placeholdersettings",
+        //  "path": "/sitecore/layout/Placeholder Settings/Foundation/ImageProcessing"
+        //},
+		//{
+        //  "name": "layouts",
+        //  "path": "/sitecore/layout/Layouts/Project/ImageProcessing"
+        //}
+      ]
+    }
+  }

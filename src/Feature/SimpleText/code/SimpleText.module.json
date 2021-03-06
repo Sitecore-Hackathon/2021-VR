@@ -1,0 +1,35 @@
+{
+    "namespace": "Feature.SimpleText",   
+    "items": {
+      "includes": [
+        //{
+        //  "name": "templates",
+        //  "path": "/sitecore/templates/Feature/SimpleText"
+        //},
+		//{
+        //  "name": "renderings",
+        //  "path": "/sitecore/layout/renderings/Feature/SimpleText"
+		//}
+        //,{
+        //  "name": "media",
+        //  "path": "/sitecore/media library/Feature/SimpleText"
+        //},
+        //{
+        //  "name": "settings",
+        //  "path": "/sitecore/media library/Feature/SimpleText"
+        //},
+        //{
+        //  "name": "branches",
+        //  "path": "/sitecore/templates/Branches/Feature/SimpleText"
+        //},
+        //{
+        //  "name": "placeholdersettings",
+        //  "path": "/sitecore/layout/Placeholder Settings/Feature/SimpleText"
+        //},
+		//{
+        //  "name": "layouts",
+        //  "path": "/sitecore/layout/Layouts/Project/SimpleText"
+        //}
+      ]
+    }
+  }
