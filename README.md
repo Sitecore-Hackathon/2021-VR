@@ -2,8 +2,8 @@
 # TEAM VR  : BYOD - Object Detection App
   
 
-### ⟹ [SetupGuide](ENTRYFORM.md) <<
-### ⟹ [UsageGuide](ENTRYFORM.md) <<
+### ⟹ [SetupGuide](/docs/Setup-Guide.docx) <<
+### ⟹ [UsageGuide](/docs/BYOD-Application-User-Guide.docx) <<
 
 ## Intro :
 
@@ -43,11 +43,11 @@ App setup is not as easy like the docker - in short you need,
 - Azure Blob Storage - to store and process image in VOTT tool
 - Custom AI acoount and Api keys
 
-Please follow this document which has clear Setup Instructions
+Please follow this [SetupGuide](/docs/Setup-Guide.docx) document which has clear Setup Instructions 
 
 ## User Guide
 
-It is quite like the workflow table but please follow this document on how to work on it.
+It is quite like the workflow table but please follow this document on how to work on it. [UsageGuide](/docs/BYOD-Application-User-Guide.docx)
 
 ## Reference images
 
@@ -68,4 +68,9 @@ It is quite like the workflow table but please follow this document on how to wo
 
 #### 6. Predict Images -- (Fun Part :D )
 ![TrainModel](/docs/images/6.Predictions.png "TrainModel")
+
+######Notes:
+- Custom Vision Requires at-least 15 images per tag to train
+- VOTT tool Export can throw 429 - Too many request error now and then. So we request you to click on Export as you tag images.
+- We have done a minilastic training on a small dataset because of time constraint , so multi-product image predictability is low.
 
